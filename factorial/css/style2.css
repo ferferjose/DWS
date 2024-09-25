@@ -1,0 +1,15 @@
+form{
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid black;
+}
+label{
+    font-size: 20px;
+    display: block;
+    text-align: center;
+}
+input[type="number"]{
+    width: 350px;
+    margin: 10px 0;
+    text-align: center;
+}

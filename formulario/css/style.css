@@ -1,0 +1,273 @@
+/* Fernando José González Bernáldez */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1rem = 10px */
+    font-family: "Rubik", sans-serif;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+/* HEADER */
+header{
+    background-image: url(../resources/img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 20vh;
+}
+.logo-container{
+    height: 100%;
+    width: 40%;
+    float: left;
+}
+.logo{
+    height: 100%;
+}
+nav{
+    width: 60%;
+    height: 100%;
+    float: right;
+    text-align: right;
+    
+}
+nav ul li{
+    color: white;
+    display: inline-block;
+    line-height: 20vh;
+    margin: 0 20px;
+}
+nav a{
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+nav a:hover{
+    transition: 1.2s;
+    border-bottom: 1px solid white;
+}
+.active{
+    border-bottom: 1px dotted whitesmoke;
+}
+
+/* Main */
+main{
+    clear: both;
+}
+h1{
+    margin: 20px 0 20px 0;
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+h1>span{
+    font-size: 2rem;
+    font-weight: 300;
+}
+#desastre1{
+    background-image: url(../resources/img/desastre1.jpg); 
+}
+#desastre2{
+    background-image: url(../resources/img/desastre2.jpg); 
+}
+#desastre3{
+    background-image: url(../resources/img/desastre3.jpg); 
+}
+#desastre4{
+    background-image: url(../resources/img/desastre4.jpg); 
+}
+.noticia{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 30px 0;
+}
+h2{
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 1px  0px 0px black,
+        0px  1px 0px black,
+        -1px  0px 0px black,
+        0px 5px 0px rgb(21, 14, 14);
+}
+.contenedor{
+    margin: 10px 5%;
+    box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 9px;
+}
+.contenedor>div{
+    padding: 15px 15px;
+    font-size: 1.7rem;
+    letter-spacing: .04rem;
+    font-family: "Noticia Text", serif;
+}
+
+/* FOOTER */
+footer{
+    background-image: url(../resources/img/footer.jpg);
+    height: 20vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+h3{
+    text-align: center;
+    color: white;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 20vh;
+    text-transform: uppercase;
+}
+
+/* Formulario */
+#fondo_formulario{
+    background-image: url(../resources/img/formulario.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 40px;
+}
+form, #fondo_recursos>div{
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin: 10px 15%;
+    padding: 10px 20px;
+    font-size: 1.7rem;
+    text-align: center;
+}
+label{
+    display: block;
+    margin: 5px 0 ;
+}
+
+input[type="text"], input[type="date"], select{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 20%;
+    text-align: center;
+    transition: 1.2s;
+    margin-bottom: 20px;
+    outline: none;
+    height: 25px;
+}
+select{
+    text-align: left;
+}
+input:focus[type="text"]{
+    transition: 1.2s;
+    width: 30%;
+    border: 1px solid #0d6efd;
+}
+textarea{
+    display: block;
+    border-radius: 5px;
+    margin: 0 auto 20px auto;
+    text-align: left;
+    resize: none;
+    width: 30%;
+    height: 50px;
+    overflow: hidden;
+    outline: none;
+}
+input[type="submit"]{
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid #0d6efd;
+    color: #0d6efd;
+    display: block;
+    text-align: center;
+    margin: 15px auto 0 auto;
+    padding: 10px 0;
+    width: 20%;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: 1.2s;
+}
+input[type="submit"]:hover{
+    transition: 1.2s;
+    background-color: #0d6efd;
+    border: 1px solid white;
+    color: white;
+}
+.ftitulo{
+    font-weight: 500;
+    font-size: 1.9rem;
+}
+
+/* Recursos */
+#fondo_recursos{
+    background-image: url(../resources/img/formulario.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 40px;
+    height: 54vh;
+}
+#fondo_recursos>div{
+    padding: 10px 5%;
+}
+#fondo_recursos>div>ol>li{
+    list-style-type: upper-roman;
+}
+.enlacesReferencia{
+    text-decoration: none;
+    color: #2ed9ff;
+}
+.enlacesReferencia:hover{
+    color: #0d6efd;
+}
+
+/* Comparativa */
+.comparaciones{
+    margin: 0 auto 20px auto;
+    width: 70%;
+}
+.comparaciones td, .comparaciones th{
+    border: 1px solid black;
+    font-size: 1.5rem;
+    padding: 5px;
+    text-align: left;
+}
+.comparaciones th{
+    font-weight: 700;
+    background-color: #cccccc;
+}
+.comparaciones tr:nth-child(even) {
+    background-color: #e0e0e0;
+}
+.comparaciones tr:nth-child(odd) {
+    background-color: #f8f8f8;
+}
+/* REUTILIZABLES */
+.display_inline{
+    display: inline;
+}
+.w-300{
+    text-align: center;
+    width: 30px;
+}
+.mt-15{
+    margin-top: 15px;
+}
+.mb-15{
+    margin-bottom: 15px;
+}
+.w-80{
+    width: 80%;
+}

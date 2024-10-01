@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Desaster Nature</title>
+        <meta name="author" content="Fernando José González Bernáldez">
+        <link rel="shortcut icon" href="resources/img/logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header><!-- header -->
+            <div class="logo-container">
+                <a href="index.html"><img class="logo" src="resources/img/logo.png" alt=""></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="formulario.html" class="active">Formulario</a></li>
+                    <li><a href="recursos.html">Recursos</a></li>
+                    <li><a href="comparaciones.html">Comparativas</a></li>
+                </ul>
+            </nav>
+        </header><!-- fin header -->
+        <main><!-- main -->
+            <h1>Envíanos el desastre</h1>
+            <div id="fondo_formulario">
+                <form action="mostrar.php" method="get">
+                    <label for="nombre" class="ftitulo">Nombre completo</label>
+                    <input type="text" name="nombre" placeholder="Nombre">
+
+                    <label for="fechaDesastre" class="ftitulo">Fecha del desastre</label>
+                    <input type="date" name="fechaDesastre" id="">
+
+                    <label for="pais" class="ftitulo">Pais</label>
+                    <select name="pais" id="">
+                        <option value="none" disabled selected>Selecciona un país</option>
+                        <option value="España">España</option>
+                        <option value="Portugal">Portugal</option>
+                        <option value="Estados Unidos">Estados Unidos</option>
+                        <option value="Colombia">Colombia</option>
+                    </select>
+                    <label for="detalles" class="ftitulo">Detalles</label>
+                    <textarea name="detalles" id="" placeholder="Escriba los detalles aquí"></textarea>
+
+                    <label for="fotos" class="ftitulo">¿Fotos?</label>
+                    <input type="radio" name="fotos" id="fotos" value="Si">
+                    <label for="fotos" class="display_inline">Sí</label>
+                    <input type="radio" name="fotos" id="" value="No">
+                    <label for="fotos" class="display_inline">No</label>
+
+                    <label for="desastre" class="ftitulo mt-15">Tipo de desastre</label>
+                    <input type="checkbox" name="desastre[]" value="terremoto">
+                    <label for="desastre" class="display_inline w-300">Terremoto</label><br/>
+                    <input type="checkbox" name="desastre[]" value="Tsunami">
+                    <label for="desastre" class="display_inline w-300">Tsunami</label><br/>
+                    <input type="checkbox" name="desastre[]" value="Huracán">
+                    <label for="desastre" class="display_inline w-300">Huracán</label><br/>
+                    <input type="checkbox" name="desastre[]">
+                    <label for="desastre" class="display_inline w-300" value="Incendio">Incendio</label><br/>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+            
+        </main><!-- fin main -->
+        <footer><!-- footer -->
+            <h3>Ayudemos al ecosistema</h3>
+        </footer><!-- fin footer -->
+    </body>
+</html>

@@ -4,7 +4,7 @@
     if(!empty($_GET['fechaDesastre']))   
         echo 'Fecha: '.$_GET['fechaDesastre'];
 
-    if(!empty($_GET['pais']))
+    if(isset($_GET['pais']))
         echo 'País: '.$_GET['pais'].'<br>';
 
     if(!empty($_GET['detalles']))

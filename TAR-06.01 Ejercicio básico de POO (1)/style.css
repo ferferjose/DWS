@@ -1,0 +1,77 @@
+
+*::before, *::after, html{
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* Fondo degradado futurista */
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+form {
+    background: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); /* Sombra suave */
+    backdrop-filter: blur(5px); /* Efecto de fondo borroso */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+label {
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    color: #00d4ff; /* Color azul neón */
+}
+form>div{
+    margin: 0 auto;
+    width: 100%;
+}
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px 0px 10px 10px;
+    margin: 10px 0 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #00d4ff; /* Texto en color neón */
+    font-size: 1.1em;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="number"]:focus,
+select:focus {
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 10px #00d4ff, 0 0 40px #00d4ff, 0 0 80px #00d4ff; /* Efecto neón en el input */
+}
+
+select {
+    color: #00ff9d;
+    font-weight: bold;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(90deg, #00d4ff, #00ff9d); /* Degradado de color futurista */
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 255, 157, 0.5), 0 0 40px rgba(0, 255, 157, 0.5); /* Efecto de luz neón */
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(90deg, #00ff9d, #00d4ff); /* Cambia de dirección el degradado al hacer hover */
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.5), 0 0 40px rgba(0, 212, 255, 0.5); /* Brilla más al hacer hover */
+}

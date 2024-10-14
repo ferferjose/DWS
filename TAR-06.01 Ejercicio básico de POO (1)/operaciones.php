@@ -4,39 +4,45 @@
         private int $n2;
         //Los resultados no los guardo porque son simples calculos matemáticos
         function __construct($num1, $num2){ //Solo me permite un constructor por lo que lo hago parametrizado. $num1 siempre será el mayor
-            $this->n1=$num1;
-            $this->n2=$num2;
+            if ($num1>$num2) {
+                $this->n1=$num1;
+                $this->n2=$num2;
+            }else{
+                $this->n1=$num2;
+                $this->n2=$num1;
+            }
+            
         }
         ////////Metodos
         function tipoOperacion($i){
             switch ($i) { //Switch que depende de lo que haya elegido en el select el usuario pues hara uno de los métodos
                 case 1:
-                    $this->suma();
+                    return $this->suma();
                     break;
                 
                 case 2:
-                    $this->resta();
+                    return $this->resta();
                     break;
                 case 3:
-                    $this->multiplicacion();
+                    return $this->multiplicacion();
                     break;
                 
                 case 4:
-                    $this->division();
+                    return $this->division();
                     break;
             }
         }
         function suma(){
-            echo '<p>'.($this->n1)+($this->n2).'</p>'; //Esto muestra directamente el resultado.
+            return ($this->n1)+($this->n2); //Esto muestra directamente el resultado.
         }
         function resta(){
-            echo '<p>'.$this->n1-$this->n2.'</p>';
+            return ($this->n1)-($this->n2);
         }
         function multiplicacion(){
-            echo '<p>'.$this->n1*$this->n2.'</p>';
+            return ($this->n1)*($this->n2);
         }
         function division(){
-            echo '<p>'.$this->n1/$this->n2.'</p>';
+            return ($this->n1)/($this->n2);
         }
         
 

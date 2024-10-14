@@ -20,7 +20,7 @@
         echo $objFecha->devolverFecha();
 
         //Te dice los días que tiene el mes elegido
-        echo '<p>El mes tiene '.$objFecha->getFechasID($objFecha->getMes()).' días</p>';
+        echo '<p>El mes tiene '.$objFecha->ndias.' días</p>';
         
     ?>
 </body>

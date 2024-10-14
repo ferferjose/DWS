@@ -5,6 +5,7 @@
         private int $anio;
         private int $mes;
         private int $dia;
+        public int $ndias;
 
         function __construct(){
             $this->fechas = array(
@@ -73,6 +74,7 @@
             $this->anio= (int) $this->fechaSpliteada[0];
             $this->mes= (int) $this->fechaSpliteada[1];
             $this->dia= (int) $this->fechaSpliteada[2];
+            $this->ndias=$this->getFechasID($this->getMes());
         }
 
         function devolverFecha(){

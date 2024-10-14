@@ -17,11 +17,7 @@
             echo '<p>No es bisiesto</p>';
         }
         //Muestra el dia
-        echo $objFecha->getFechaSpliteadaI(2).'/';
-        //Muestra el mes con texto
-        echo $objFecha->getFechasI($objFecha->getMes()).'/';
-        //Muestra el año
-        echo $objFecha->getFechaSpliteadaI(0);
+        echo $objFecha->devolverFecha();
 
         //Te dice los días que tiene el mes elegido
         echo '<p>El mes tiene '.$objFecha->getFechasID($objFecha->getMes()).' días</p>';

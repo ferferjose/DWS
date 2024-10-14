@@ -75,6 +75,10 @@
             $this->dia= (int) $this->fechaSpliteada[2];
         }
 
+        function devolverFecha(){
+            return $this->getFechaSpliteadaI(2).'/'.$this->getFechasI($this->getMes()).'/'.$this->getFechaSpliteadaI(0);
+        }
+
         ////////////////////////////////////////////////// GETTERS AND SETTER
         public function getFechaSpliteada()
         {

@@ -16,7 +16,7 @@
         }else{
             echo '<p>No es bisiesto</p>';
         }
-        //Muestra el dia
+        //Muestra la fecha
         echo $objFecha->devolverFecha();
 
         //Te dice los días que tiene el mes elegido

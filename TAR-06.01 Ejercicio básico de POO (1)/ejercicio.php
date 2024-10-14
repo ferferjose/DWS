@@ -12,7 +12,7 @@
             require_once 'operaciones.php';
             $objOperaciones = new Operaciones($_GET['n1'], $_GET['n2']);
             echo '<h1>Resultado de operación</h1>';
-            echo '<p>'.$objOperaciones->tipoOperacion($_GET['operacion']).'<p/>'; //No me es necesario hacer un echo porque ya lo tengo en los métodos
+            echo '<p>'.$objOperaciones->tipoOperacion($_GET['operacion']).'<p/>';
         ?>
         <a href="formulario.html" class="back-btn">Volver</a>
     </div>
